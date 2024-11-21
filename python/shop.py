@@ -19,6 +19,7 @@ class User:
     verified: bool
 
 
+
 class Shop:
     @classmethod
     def can_order(cls, user):
