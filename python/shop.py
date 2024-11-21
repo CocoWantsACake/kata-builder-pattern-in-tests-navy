@@ -24,10 +24,7 @@ class Shop:
     def can_order(cls, user):
         if user.age <= 18:
             return False
-        if not user.verified:
-            return True
-        else:
-            return True
+        return user.verified
 
     @classmethod
     def must_pay_foreign_fee(cls, user):
